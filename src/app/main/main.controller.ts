@@ -6,7 +6,6 @@ module ungmedia {
     constructor () {
 
     }
-
   }
 
 }
