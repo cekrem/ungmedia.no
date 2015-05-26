@@ -12,8 +12,8 @@
         "module": null
       },
       "router": {
-        "key": "ui-router",
-        "module": "ui.router"
+        "key": "angular-route",
+        "module": "ngRoute"
       },
       "ui": {
         "key": "angular-material",
@@ -24,9 +24,9 @@
         "extension": "css"
       },
       "jsPreprocessor": {
-        "key": "typescript",
-        "extension": "ts",
-        "srcExtension": "ts"
+        "key": "babel",
+        "extension": "js",
+        "srcExtension": "es6"
       },
       "htmlPreprocessor": {
         "key": "none",

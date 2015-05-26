@@ -1,5 +1,5 @@
 {
-  "name": "ungmedia",
+  "name": "um",
   "version": "0.0.0",
   "dependencies": {},
   "scripts": {
@@ -29,12 +29,9 @@
     "gulp-inject": "~1.1.1",
     "gulp-protractor": "~0.0.12",
     "gulp-sourcemaps": "~1.3.0",
-    "gulp-typescript": "~2.4.0",
-    "gulp-tslint": "~1.4.1",
-    "gulp-to-json": "~1.0.1",
-    "gulp-order": "~1.1.1",
-    "mkdirp": "~0.5.0",
-    "tsd": "~0.6.0-beta.5",
+    "gulp-webpack": "~1.2.0",
+    "jshint-loader": "~0.8.3",
+    "babel-loader": "~4.0.0",
     "main-bower-files": "~2.5.0",
     "merge-stream": "~0.1.7",
     "jshint-stylish": "~1.0.0",

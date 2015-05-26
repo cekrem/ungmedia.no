@@ -27,16 +27,13 @@ module.exports = function(options) {
     ];
 
     var srcFiles = [
-      options.tmp + '/serve/app/**/!(index).js',
-      options.tmp + '/serve/app/**/index.js'
+      options.tmp + '/serve/app/index.js'
     ].concat(specFiles.map(function(file) {
       return '!' + file;
     }));
 
-    var sortOutput = require('../' + options.tmp + '/sortOutput.json');
 
-    gulp.src(srcFiles, { read: false })
-      .pipe($.order(sortOutput, {base: options.tmp + '/serve/app'}))
+    gulp.src(srcFiles)
       .pipe(concat(function(files) {
         callback(bowerDeps.js
           .concat(_.pluck(files, 'path'))

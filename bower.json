@@ -1,8 +1,8 @@
 {
-  "name": "ungmedia",
+  "name": "um",
   "version": "0.0.0",
   "dependencies": {
-    "angular-ui-router": "~0.2.13",
+    "angular-route": "~1.3.4",
     "angular-material": "~0.8.3",
     "angular": "~1.3.4"
   },

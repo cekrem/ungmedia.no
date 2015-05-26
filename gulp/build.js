@@ -18,7 +18,7 @@ module.exports = function(options) {
         quotes: true
       }))
       .pipe($.angularTemplatecache('templateCacheHtml.js', {
-        module: 'ungmedia',
+        module: 'um',
         root: 'app'
       }))
       .pipe(gulp.dest(options.tmp + '/partials/'));
@@ -75,12 +75,12 @@ module.exports = function(options) {
   gulp.task('other', function () {
     return gulp.src([
       options.src + '/**/*',
-      '!' + options.src + '/**/*.{html,css,js,ts}'
+      '!' + options.src + '/**/*.{html,css,js}'
     ])
       .pipe(gulp.dest(options.dist + '/'));
   });
 
-  gulp.task('clean', ['tsd:purge'], function (done) {
+  gulp.task('clean', function (done) {
     $.del([options.dist + '/', options.tmp + '/'], done);
   });
 

@@ -12,14 +12,11 @@ module.exports = function(options) {
       options.src + '/app/**/*.css'
     ], { read: false });
 
-    var sortOutput = require('../' + options.tmp + '/sortOutput.json');
-
     var injectScripts = gulp.src([
-      '{' + options.src + ',' + options.tmp + '/serve}/app/**/*.js',
+      options.tmp + '/serve/app/**/*.js',
       '!' + options.src + '/app/**/*.spec.js',
       '!' + options.src + '/app/**/*.mock.js'
-    ], { read: false })
-    .pipe($.order(sortOutput, {base: options.tmp + '/serve/app'}));
+    ], { read: false });
 
     var injectOptions = {
       ignorePath: [options.src, options.tmp + '/serve'],
