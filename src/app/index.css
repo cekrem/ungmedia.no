@@ -10,7 +10,10 @@ body {
 }
 
 header {
-  background: rgba(255,255,255,0.8);
+  background: url('../assets/images/logo.png') rgba(255,255,255,0.8);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
 }
 
 @media (max-width: 599px) {
