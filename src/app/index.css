@@ -9,6 +9,10 @@ body {
   background: none;
 }
 
+header {
+  background: rgba(255,255,255,0.8);
+}
+
 @media (max-width: 599px) {
   html {
     background-repeat: repeat-y;
@@ -39,8 +43,9 @@ body {
   background:rgba(190,155,123, 0.7);
 }
 
+/* TRANSITIONS */
 #nav md-grid-tile {
-  -webkit-transition:
+  -webkit-transition: all 1s;
   -moz-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s;
