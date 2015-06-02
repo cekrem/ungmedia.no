@@ -19,6 +19,8 @@ header {
   background-repeat: no-repeat;
   background-position-x: center;
 
+  z-index: 2;
+
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
   -o-transition: all 1s;
