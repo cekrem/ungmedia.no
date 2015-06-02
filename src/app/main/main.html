@@ -1,18 +1,22 @@
-
+<header ng-style="logoPos"></header>
 <md-grid-list id="nav" md-cols-sm="1" md-gutter="0px" md-cols="2" md-row-height="50%">
-  <md-grid-tile class="md-display-1">
+  <md-grid-tile class="md-display-1"
+                ng-mouseover="logoPos = {'margin-left' : '-200px', 'margin-top' : '-200px'}">
     <a href="#/hvem">Hvem?</a>
   </md-grid-tile>
 
-  <md-grid-tile class="md-display-1">
+  <md-grid-tile class="md-display-1"
+                ng-mouseover="logoPos = {'margin-left' : '0', 'margin-top' : '-200px'}">
     <a href="#/hva">Hva?</a>
   </md-grid-tile>
 
-  <md-grid-tile class="md-display-1">
+  <md-grid-tile class="md-display-1"
+                ng-mouseover="logoPos = {'margin-left' : '-200px', 'margin-top' : '0'}">
     <a href="#/hvor">Hvor?</a>
   </md-grid-tile>
 
-  <md-grid-tile class="md-display-1">
+  <md-grid-tile class="md-display-1"
+                ng-mouseover="logoPos = {'margin-left' : '0', 'margin-top' : '0'}">
     <a href="#/hvordan">Hvordan?</a>
   </md-grid-tile>
 </md-grid-list>

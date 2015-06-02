@@ -9,16 +9,40 @@ body {
   background: none;
 }
 
+p {
+  width: 480px;
+}
+
 header {
   background: url('../assets/images/logo.png') rgba(255,255,255,0.8);
   background-size: contain;
   background-repeat: no-repeat;
   background-position-x: center;
+
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+
+  width: 200px;
+  height: 200px;
+  position:fixed;
+  top:50%;
+  margin-top: -100px;
+  left:50%;
+  margin-left: -100px;
 }
 
 @media (max-width: 599px) {
   html {
     background-repeat: repeat-y;
+  }
+
+  header {
+    top:0 !important;
+    margin-top:0 !important;
+    left: 50% !important;
+    margin-left: 50px !important;
   }
 }
 
