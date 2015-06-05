@@ -1,8 +1,13 @@
+/* FONTS */
+@import url(http://fonts.googleapis.com/css?family=Fjalla+One);
+@import url(http://fonts.googleapis.com/css?family=Cutive+Mono);
+
 /* GENERAL */
 html {
   /*background: url('../assets/images/trommebakgrunn.gif');*/
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: 'Cutive Mono', RobotoDraft, Roboto, 'Helvetica Neue', sans-serif;
 }
 
 body {
@@ -14,6 +19,10 @@ body {
   height: 100%;
   top: 0;
   min-width: 280px;
+}
+
+h1, a {
+  font-family: 'Fjalla One', RobotoDraft, Roboto, 'Helvetica Neue', sans-serif;
 }
 
 p {
@@ -39,43 +48,6 @@ header {
   margin-top: -100px;
   left:50%;
   margin-left: -100px;
-}
-
-@media (max-width: 599px) {
-  html {
-    background-repeat: repeat-y;
-  }
-
-  [ng-view] {
-    height: calc(100% - 200px) !important;
-  }
-
-  header {
-    top:0 !important;
-    margin-top:0 !important;
-    left: 0 !important;
-    margin-left: 0px !important;
-    width: 100%;
-    border-radius: 0px;
-  }
-
-  md-content {
-    padding-right: 0 !important;
-    overflow-x: hidden;
-    background: white !important;
-  }
-
-  .spacer {
-    height: 200px;
-  }
-
-  #nav md-grid-tile {
-    border: 20px solid white !important;
-  }
-
-  #nav md-grid-tile:nth-child(1) {
-    border-top: 0 solid white !important;
-  }
 }
 
 /* SPECIFICS */
@@ -192,3 +164,41 @@ header {
   background: white;
 }
 
+/* MOBILE */
+
+@media (max-width: 599px) {
+  html {
+    background-repeat: repeat-y;
+  }
+
+  [ng-view] {
+    height: calc(100% - 200px) !important;
+  }
+
+  header {
+    top: 0 !important;
+    margin-top: 0 !important;
+    left: 0 !important;
+    margin-left: 0px !important;
+    width: 100%;
+    border-radius: 0px;
+  }
+
+  md-content {
+    padding-right: 0 !important;
+    overflow-x: hidden;
+    background: white !important;
+  }
+
+  .spacer {
+    height: 200px;
+  }
+
+  #nav md-grid-tile {
+    border: 20px solid white !important;
+  }
+
+  #nav md-grid-tile:nth-child(1) {
+    border-top: 0 solid white !important;
+  }
+}
