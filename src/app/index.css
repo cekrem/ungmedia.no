@@ -32,7 +32,7 @@ p {
 header {
   background-image: url('../assets/images/um-logo-web.svg');
   background-color: white;
-  background-size: contain;
+  background-size: 150px;
   background-repeat: no-repeat;
   background-position: center;
 
