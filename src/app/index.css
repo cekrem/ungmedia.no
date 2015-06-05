@@ -21,17 +21,18 @@ p {
 }
 
 header {
-  background: url('../assets/images/um-logo-web.svg') white;
+  background-image: url('../assets/images/um-logo-web.svg');
+  background-color: white;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position-x: center;
+  background-position: center;
 
   z-index: 2;
 
   width: 200px;
   min-width: 200px;
   height: 200px;
-  /*border-radius: 100px;*/
+  border-radius: 100px;
 
   position:fixed;
   top:50%;
@@ -55,11 +56,13 @@ header {
     left: 0 !important;
     margin-left: 0px !important;
     width: 100%;
+    border-radius: 0px;
   }
 
   md-content {
     padding-right: 0 !important;
     overflow-x: hidden;
+    background: white !important;
   }
 
   .spacer {
@@ -80,6 +83,7 @@ header {
 /* CONTENT */
 md-content {
   z-index: 3;
+  background: white;
   border: 20px solid white;
 }
 
@@ -139,11 +143,11 @@ md-content p, h1 span {
 }
 
 #nav md-grid-tile:nth-child(3) div {
-
+  background-image: url('../assets/images/trikkestallen.gif');
 }
 
 #nav md-grid-tile:nth-child(4) div {
-
+  background-image: url('../assets/images/tv.gif');
 }
 
 /* TRANSITIONS */
