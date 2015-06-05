@@ -135,7 +135,7 @@ md-content p, h1 span {
 }
 
 #nav md-grid-tile:nth-child(2) div {
-
+  background-image: url('../assets/images/trommebakgrunn.gif');
 }
 
 #nav md-grid-tile:nth-child(3) div {
