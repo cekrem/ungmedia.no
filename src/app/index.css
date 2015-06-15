@@ -25,7 +25,7 @@ h1, a {
   font-family: 'Fjalla One', RobotoDraft, Roboto, 'Helvetica Neue', sans-serif;
 }
 
-p {
+section {
   max-width: 480px;
 }
 
@@ -55,14 +55,21 @@ header {
 /* CONTENT */
 md-content {
   z-index: 3;
-  background: white;
-  border: 20px solid white;
+  background-attachment: fixed;
+  background-position: 600px;
+  background-repeat: no-repeat;
+  border: 20px solid rgba(255, 255, 255, 0);
 }
 
-md-content p, h1 span {
-  background: white;
-  margin-left: -20px;
-  border-left: 20px solid white;
+/*md-content span, section {*/
+/*  background: white;*/
+/*  margin-left: -20px;*/
+/*  border-left: 20px solid white;*/
+/*}*/
+
+md-content img {
+  width: 185px;
+  margin-bottom: -20px;
 }
 
 /* NAV */
