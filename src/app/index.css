@@ -37,6 +37,10 @@ b:hover span {
   border: 5px solid white;
 }
 
+md-content {
+  overflow: hidden;
+}
+
 section {
   max-width: 480px;
 }
@@ -87,6 +91,13 @@ md-content img {
 md-content p {
   margin-top: -15px;
   margin-bottom: 30px;
+}
+
+section .md-button {
+  display: block;
+  margin-top: -20px;
+  margin-left: 0 !important;
+  overflow: hidden;
 }
 
 /* NAV */

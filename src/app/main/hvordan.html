@@ -1,7 +1,40 @@
 <md-content class="md-padding" style="background-image: url('../assets/images/tv.gif'); background-size: cover">
   <h1 class="md-display-4">Hvordan?</h1>
+
   <section>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam asperiores, aspernatur culpa esse
-      ex fugiat inventore ipsa ipsam minima nulla officiis quasi quia quisquam quos totam vel velit voluptatibus.</p>
+    <p>Vi tror at alle unge har noe kreativt i seg. Kreativitet handler om å uttrykke seg, og å finne sin lidenskap –
+      noe å brenne for eller være god på.</p>
+
+    <p>Vi jobber med ungdom på mange forskjellige plan; vi tilbyr både en-til-en undervisning og oppfølging,
+      gruppetimer, planlegging og gjennomføring av prosjekter, og sosiale arrangementer.</p>
+
+    <p>For oss er mestringsfølelse alfa og omega, og vi tror at alle kan nå dit de vil dersom de får en stige å klatre
+      på.</p>
+
+    <p>Vi jobber etter følgende mantra: ingen utfordringer er for store - i fellesskap klarer vi alt! Å stå på en scene
+      eller jobbe seg frem til et resultat handler om så mye mer – det handler om å la mennesker få utfylle sitt
+      potensiale, og forstå at de har enorme ressurser som de kan bruke til hva de vil!</p>
   </section>
+
+  <h1 class="md-display-2">Ansatte</h1>
+
+  <section ng-init="more = false">
+    <img src="../assets/images/eia.jpeg" alt=""/>
+
+    <h1>Eia</h1>
+
+    <p>
+      Eia er Ung Medias nye leder! I følge Eia ligger løsningen på verdens problemer en kombinasjon av ungdom, kultur,
+      engasjement og kjærlighet.
+    </p>
+
+    <p ng-show="more">Hennes første prosjekt på huset var en kraftig dugnad, og lidenskapen og stå-på-vilja er med i alt
+      hun gjør. Eia spiller i bandet Gaspard, og klandrer steinerskolen for hennes ukontrollerte kreativitet. Hun har
+      jobbet mye med ungdom og har en master i politikk (eller noe sånt). Latteren sitter løst, og jobben og ungdom tas
+      på alvor. Vi ønsker henne varmt velkommen!</p>
+
+    <div ng-show="!more" ng-click="more = true" class="md-button">Mer...</div>
+    <div ng-show="more" ng-click="more = false" class="md-button">Mindre!</div>
+  </section>
+
 </md-content>
