@@ -37,11 +37,6 @@ a {
   color: inherit;
 }
 
-b {
-  font-weight: normal;
-  background: yellow;
-}
-
 b span {
   display: none;
 }
@@ -50,9 +45,9 @@ b:hover span {
   display: block;
   color: black;
   position: absolute;
-  background: yellow;
+  background: lightblue;
   padding: 5px;
-  border: 5px solid yellow;
+  border: 5px solid lightblue;
 }
 
 md-content {
@@ -102,7 +97,7 @@ md-content section {
 }
 
 md-content section span {
-  background: yellow;
+  background: lightblue;
 }
 
 /*md-content span, section {*/
