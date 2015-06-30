@@ -5,7 +5,7 @@ import MainCtrl from './main/main.controller';
 angular.module('um', ['ngRoute', 'ngMaterial'])
   .controller('MainCtrl', MainCtrl)
 
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider, $mdThemingProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'app/main/main.html',
@@ -26,5 +26,7 @@ angular.module('um', ['ngRoute', 'ngMaterial'])
       .otherwise({
         redirectTo: '/'
       });
-  })
-;
+
+    $mdThemingProvider.theme('default')
+      .primaryPalette('grey');
+  });

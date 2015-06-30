@@ -1,24 +1,31 @@
 <md-content class="md-padding" style="background-image: url('../assets/images/crowd.gif'); background-size: cover">
   <h1 class="md-display-4">Hvem?</h1>
 
-  <section>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam asperiores, aspernatur culpa esse
-      ex fugiat inventore ipsa ipsam minima nulla officiis quasi quia quisquam quos totam vel velit voluptatibus.</p>
-
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam asperiores, aspernatur culpa esse
-      ex
-      fugiat inventore ipsa ipsam minima nulla officiis quasi quia quisquam quos totam vel velit voluptatibus.</p>
-
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam asperiores, aspernatur culpa esse
-      ex
-      fugiat inventore ipsa ipsam minima nulla officiis quasi quia quisquam quos totam vel velit voluptatibus.</p>
-
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam asperiores, aspernatur culpa esse
-      ex
-      fugiat inventore ipsa ipsam minima nulla officiis quasi quia quisquam quos totam vel velit voluptatibus.</p>
+  <section ng-init="ungdom = true; sagene = true;">
+    <h1>Er du...</h1>
+    <md-checkbox class="md-primary" ng-model="ungdom">ungdom</md-checkbox>
+    <md-checkbox class="md-primary" ng-model="sagene">bosatt i / kommer fra Sagene bydel</md-checkbox>
   </section>
 
-  <h1 class="md-display-2"><span>Humans of Ung Media</span></h1>
+  <section>
+    <h1 ng-class="{'not-for-you': !ungdom || !sagene }">Da er du er velkommen til oss på Ung Media!</h1>
+  </section>
+
+  <section>
+    <p>Dans? Musikk? Tegning? Animasjon? Tekst? Foto? Film? Matlaging? Studioproduksjon? Spill? Lek og morro?</p>
+  </section>
+
+  <section>
+    <p>Du trenger ikke kunne noe som helst, vi underviser både nybegynnere og eksperter. Det er også lov å prøve seg
+      frem selv, eller komme for å være sammen med andre kreative ungdommer. </p>
+  </section>
+
+  <section>
+    <p>Hos oss kan du være, lære, le og vokse. Tar du med deg selv og din kreativitet, så stiller byens beste ungdom med
+      hjerte- og husrom! </p>
+  </section>
+
+  <h1 class="md-display-2">Humans of Ung Media</h1>
 
   <section>
     <img src="../assets/images/yasmin.jpg" alt=""/>
@@ -63,6 +70,10 @@
       og har masse ambisjoner. Jeg er lei av at folk har masse formeninger om somaliere og tror vi alle skal ende opp på
       NAV - I will prove you wrong!"
     </p>
+  </section>
+
+  <section>
+    <p>Følg oss på facebook og hils på flere humans of ung media <a href="//facebook.com/ungmedia">her</a>!</p>
   </section>
 
 </md-content>
