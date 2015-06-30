@@ -190,7 +190,7 @@ section .not-for-you {
 }
 
 #nav md-grid-tile:nth-child(4) div {
-  background-image: url('../assets/images/tv.gif');
+  background-image: url('../assets/images/parken.gif');
 }
 
 /* TRANSITIONS */
