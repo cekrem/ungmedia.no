@@ -18,7 +18,7 @@
 
   <h1 class="md-display-2">Ansatte</h1>
 
-  <section ng-init="more = false">
+  <section>
     <img src="../assets/images/eia.jpeg" alt=""/>
 
     <h1>Eia</h1>
@@ -28,13 +28,68 @@
       engasjement og kjærlighet.
     </p>
 
-    <p ng-show="more">Hennes første prosjekt på huset var en kraftig dugnad, og lidenskapen og stå-på-vilja er med i alt
+    <p ng-show="eia">Hennes første prosjekt på huset var en kraftig dugnad, og lidenskapen og stå-på-vilja er med i alt
       hun gjør. Eia spiller i bandet Gaspard, og klandrer steinerskolen for hennes ukontrollerte kreativitet. Hun har
       jobbet mye med ungdom og har en master i politikk (eller noe sånt). Latteren sitter løst, og jobben og ungdom tas
       på alvor. Vi ønsker henne varmt velkommen!</p>
 
-    <div ng-show="!more" ng-click="more = true" class="md-button">Mer...</div>
-    <div ng-show="more" ng-click="more = false" class="md-button">Mindre!</div>
+    <div ng-show="!eia" ng-click="eia = true" class="md-button">Mer...</div>
+    <div ng-show="eia" ng-click="eia = false" class="md-button">Mindre!</div>
+  </section>
+
+  <section>
+    <img src="../assets/images/sjur.jpeg" alt=""/>
+
+    <h1>Sjur</h1>
+
+    <p>
+      Sjur er Ung Medias egen multiinstrumentalist! Sjur underviser i de fleste instrumenter, og tar en hver utfordring
+      på strak arm.
+    </p>
+
+    <p ng-show="sjur">Sjur er en sylskarp Tromsø-gutt med de rette ordene til en hver anledning. Som sessionmusiker har
+      han spilt med blant andre Sondre Justad, Bløsh, Marion Ravn, Eye Emma Jedi, Mo og Mathilda. Du har sikkert sett
+      ham på God morgen Norge, Senkveld eller VG-lista. Fotball og nordnorske fjell står hans hjerte nært, og musikalsk
+      er han i øverste klasse. Er det noe Sjur ikke kan lære deg, er det nok ingen andre som kan det heller. </p>
+
+    <div ng-show="!sjur" ng-click="sjur = true" class="md-button">Mer...</div>
+    <div ng-show="sjur" ng-click="sjur = false" class="md-button">Mindre!</div>
+  </section>
+
+  <section>
+    <img src="../assets/images/christian.jpeg" alt=""/>
+
+    <h1>Christian</h1>
+
+    <p>
+      Christian er vår eminente filmfotograf. Han underviser i både musikk og film, og er ansvarlig for Ung Medias
+      (veldig seriøse og evig pågående) sjakkturnering. 
+    </p>
+
+    <p ng-show="christian">I tillegg til å stadig komme opp med funky trommesoloer og fete gitarriff, er Christian
+      sjefsutvikler i DC Apps (som han driver sammen med en annen sjakkentusiast). Christian er en lun artigkar fra det
+      høye nord, men ikke la deg lure - han er perfeksjonist til fingerspissene!</p>
+
+    <div ng-show="!christian" ng-click="christian = true" class="md-button">Mer...</div>
+    <div ng-show="christian" ng-click="christian = false" class="md-button">Mindre!</div>
+  </section>
+
+  <section>
+    <img src="../assets/images/haris.jpeg" alt=""/>
+
+    <h1>Haris</h1>
+
+    <p>
+      Det slår gnister når Haris entrer rommet! Det være seg på scenen, dansegulvet eller kontoret.
+    </p>
+
+    <p ng-show="haris">Haris er Ung Medias egen inspirator, som ser – og får frem – det beste i alle han møter. Haris
+      har drevet med musikk så lenge han kan huske, og har en solokarriere i fult firsprang. Hvis du vil ha ubetydelige,
+      overfladiske samtaler bør du holde deg langt unna denne fyren. Haris går fult og helt inn i alt han gjør og du
+      blir garantert påvirket av hans engasjert av hans lidenskap og inderlighet!</p>
+
+    <div ng-show="!haris" ng-click="haris = true" class="md-button">Mer...</div>
+    <div ng-show="haris" ng-click="haris = false" class="md-button">Mindre!</div>
   </section>
 
 </md-content>
