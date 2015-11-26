@@ -8,8 +8,7 @@ angular.module('um', ['ngRoute', 'ngMaterial'])
   .config(function ($routeProvider, $mdThemingProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'app/main/main.html',
-        controller: 'MainCtrl as main'
+        templateUrl: 'app/main/main.html'
       })
       .when('/hvem', {
         templateUrl: 'app/main/hvem.html'
